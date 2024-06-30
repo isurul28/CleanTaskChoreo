@@ -36,7 +36,7 @@ else:
             letters = chr(65 + remainder) + letters
         return letters
 
-word = "Scan"
+word = "Clean"
 print(row_index)
 row_values = worksheet.row_values(row_index)
 
@@ -48,7 +48,7 @@ for col_index, cell_value in enumerate(row_values, start=1):
         break
 
 if column_alphabet is None:
-    print("Column with 'Scan' not found.")
+    print("Column with 'Clean' not found.")
 else:
     Email_index = 1
     Email_reference = f"{column_alphabet}{Email_index}"
